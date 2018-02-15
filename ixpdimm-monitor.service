@@ -1,0 +1,12 @@
+[Unit]
+Description=NVM Monitoring Service
+
+[Service]
+Type=forking
+ExecStartPre=-/usr/bin/mkdir -p /var/lib/ixpdimm_sw
+ExecStartPre=-/usr/bin/cp -n /usr/share/ixpdimm_sw/apss.dat /usr/share/ixpdimm_sw/public.rev0.pem /var/lib/ixpdimm_sw/
+ExecStart=/usr/bin/ixpdimm-monitor -d
+PIDFile=/var/run/ixpdimm-monitor.pid
+
+[Install]
+WantedBy=multi-user.target
