@@ -1,1 +1,2 @@
+mkdir -p %{buildroot}/usr/share/ixpdimm_sw/
 mv %{buildroot}/var/lib/ixpdimm_sw/* %{buildroot}/usr/share/ixpdimm_sw/
