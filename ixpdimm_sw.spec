@@ -4,7 +4,7 @@
 #
 Name     : ixpdimm_sw
 Version  : 01.00.00.2460
-Release  : 2
+Release  : 3
 URL      : https://github.com/intel/ixpdimm_sw/archive/v01.00.00.2460.tar.gz
 Source0  : https://github.com/intel/ixpdimm_sw/archive/v01.00.00.2460.tar.gz
 Source1  : ixpdimm-monitor.service
